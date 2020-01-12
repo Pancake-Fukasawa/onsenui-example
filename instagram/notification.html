@@ -1,0 +1,120 @@
+<ons-page id="notification.html">
+  <ons-page id="notification">
+    <ons-tabbar id="tabbar_notification" position="top" animation="slide">
+      <ons-tab label="Following" page="following-notifications.html"></ons-tab>
+      <ons-tab label="You" page="your-notification.html" active></ons-tab>
+    </ons-tabbar>
+  </ons-page>
+
+  <template id="following-notifications.html">
+    <ons-page id="following-notifications">
+      <ons-list>
+        <!-- This item is a template for a notification informing the user about other users liking a post of a followed user. -->
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-01.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b>, <b>david_graham</b> and 18 others liked <b>david_graham</b>&#39;s post. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+          <div class="right" style="padding-right: 7px">
+            <img class="notification_thumbnail" src="assets/img/post-01.jpg" />
+          </div>
+        </ons-list-item>
+
+        <!-- This item is a template for a notification informing the user about other users that some followed user started to follow. -->
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-02.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b> started following <b>david_graham</b> and 2 others. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+        </ons-list-item>
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-03.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b>, <b>david_graham</b> and 18 others liked <b>david_graham</b>&#39;s post. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+          <div class="right" style="padding-right: 7px">
+            <img class="notification_thumbnail" src="assets/img/post-02.jpg" />
+          </div>
+        </ons-list-item>
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-04.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b> started following <b>david_graham</b> and 2 others. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+        </ons-list-item>
+      </ons-list>
+
+      <style type="text/css">
+        .notification-post {
+          padding-left: 7px;
+          font-size: 14px;
+        }
+
+        .notification_thumbnail {
+          width: 30px;
+        }
+      </style>
+    </ons-page>
+  </template>
+
+  <template id="your-notification.html">
+    <ons-page id="your-notification">
+      <ons-list>
+        <!-- The items in this list are a template for a notification informing the user about who liked his posts. -->
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-01.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b>, <b>david_graham</b> and 18 others liked your post. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+          <div class="right" style="padding-right: 7px"><img class="notification_thumbnail" src="assets/img/post-01.jpg" /></div>
+        </ons-list-item>
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-02.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b>, <b>david_graham</b> and 18 others liked your post. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+          <div class="right" style="padding-right: 7px"><img class="notification_thumbnail" src="assets/img/post-02.jpg" /></div>
+        </ons-list-item>
+
+        <ons-list-item class="notification-post">
+          <div class="left">
+            <img class="list-item__thumbnail" src="assets/img/profile-image-03.png" />
+          </div>
+          <div class="center">
+            <div><b>david_graham</b>, <b>david_graham</b> and 18 others liked your post. <span style="opacity: 0.4;">1 hour ago</span></div>
+          </div>
+          <div class="right" style="padding-right: 7px"><img class="notification_thumbnail" src="assets/img/post-03.jpg" /></div>
+        </ons-list-item>
+      </ons-list>
+
+      <style type="text/css">
+        .notification-post {
+          padding-left: 7px;
+          font-size: 14px;
+        }
+
+        .notification_thumbnail {
+          width: 30px;
+        }
+      </style>
+    </ons-page>
+  </template>
+</ons-page>
